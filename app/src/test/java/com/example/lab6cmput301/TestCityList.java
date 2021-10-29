@@ -50,7 +50,7 @@ public class TestCityList {
         tmplist = mockCityList();
         City city = new City("shenyang","liaoning");
         tmplist.addCity(city);
-        assertEquals(false,tmplist.hasCity(city));
+        assertEquals(true,tmplist.hasCity(city));
     }
 
     @Test
