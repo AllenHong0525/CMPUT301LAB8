@@ -59,7 +59,7 @@ public class TestCityList {
         City city = new City("changchun","jilin");
         assertThrows(IllegalArgumentException.class,()->{tmplist.delete(mockCity());});
         tmplist.addCity(city);
-        assertEquals(2,tmplist.getCities().size());
+        assertEquals(1,tmplist.getCities().size());
         tmplist.delete(city);
         assertEquals(1,tmplist.getCities().size());
     }
